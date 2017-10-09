@@ -1,0 +1,8 @@
+$script = <<SCRIPT
+useradd -u 12345 -g users -d /home/ec2-user -s /bin/bash -p $(echo password | openssl passwd -1 -stdin) ec2-user
+SCRIPT
+
+Vagrant.configure("2") do | config |
+  config.vm.box     = "mvbcoding/awslinux"
+  config.vm.provision "shell", inline: $script
+end
