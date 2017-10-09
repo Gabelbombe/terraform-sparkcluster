@@ -1,4 +1,5 @@
 #!/bin/bash
+# NOTE: implement, https://alexbilbie.com/2017/06/consul-server-cluster-on-ec2/
 
 set -e
 
