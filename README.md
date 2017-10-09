@@ -7,6 +7,9 @@ The goal of this project is to deploy a Spark cluster on AWS using Packer, Terra
 
 Run the commands below from the `top level` directory.
 
+```
+vagrant login
+```
 
 ### Exports
 
