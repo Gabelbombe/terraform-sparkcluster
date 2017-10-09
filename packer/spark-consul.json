@@ -16,11 +16,11 @@
   "provisioners": [
     {
       "type": "shell",
-      "script": "files/installers/centos-install.sh"
+      "script": "packer/files/installers/centos-install.sh"
     },
     {
       "type": "shell",
-      "script": "files/installers/consul-install.sh"
+      "script": "packer/files/installers/consul-install.sh"
     },
     {
       "type": "file",
