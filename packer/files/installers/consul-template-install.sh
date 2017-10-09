@@ -3,7 +3,7 @@
 
 set -e
 
-CT_VERSION=0.11.0
+CT_VERSION=0.19.3
 
 # install consul
 echo "Installing dependencies..."
