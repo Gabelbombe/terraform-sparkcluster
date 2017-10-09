@@ -10,13 +10,13 @@
     "region":        "{{user `region`}}",
     "source_ami":    "{{user `source_ami`}}",
     "instance_type": "t2.micro",
-    "ssh_username":  "ubuntu",
+    "ssh_username":  "centos",
     "ami_name":      "{{user `atlas_username`}}-{{user `atlas_name`}}-{{timestamp}}"
   }],
   "provisioners": [
     {
       "type": "shell",
-      "script": "files/installers/ubuntu-install.sh"
+      "script": "files/installers/centos-install.sh"
     },
     {
       "type": "shell",
