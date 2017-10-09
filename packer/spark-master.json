@@ -28,17 +28,17 @@
     },
     {
       "type": "file",
-      "source": "files/init/consul_client.conf",
+      "source": "packer/files/init/consul_client.conf",
       "destination": "/etc/init/consul.conf"
     },
     {
       "type": "file",
-      "source": "files/consul.d/consul-client.json",
+      "source": "packer/files/consul.d/consul-client.json",
       "destination": "/etc/consul.d/consul-client.json"
     },
     {
       "type": "file",
-      "source": "files/consul.d/spark-master.json",
+      "source": "packer/files/consul.d/spark-master.json",
       "destination": "/etc/consul.d/spark-master.json"
     }
   ],

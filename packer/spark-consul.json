@@ -24,12 +24,12 @@
     },
     {
       "type": "file",
-      "source": "files/consul.d/consul-server.json",
+      "source": "packer/files/consul.d/consul-server.json",
       "destination": "/etc/consul.d/consul-server.json"
     },
     {
       "type": "file",
-      "source": "files/init/consul_bootstrap.conf",
+      "source": "packer/files/init/consul_bootstrap.conf",
       "destination": "/etc/init/consul.conf"
     }
   ],

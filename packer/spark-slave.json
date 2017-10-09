@@ -28,17 +28,17 @@
     },
     {
       "type": "file",
-      "source": "files/init/consul_client.conf",
+      "source": "packer/files/init/consul_client.conf",
       "destination": "/etc/init/consul.conf"
     },
     {
       "type": "file",
-      "source": "files/consul.d/consul-client.json",
+      "source": "packer/files/consul.d/consul-client.json",
       "destination": "/etc/consul.d/consul-client.json"
     },
     {
       "type": "file",
-      "source": "files/consul.d/spark-slave.json",
+      "source": "packer/files/consul.d/spark-slave.json",
       "destination": "/etc/consul.d/spark-slave.json"
     },
     {
@@ -47,12 +47,12 @@
     },
     {
       "type": "file",
-      "source": "files/templates/start-slave.sh.ctmpl",
+      "source": "packer/files/templates/start-slave.sh.ctmpl",
       "destination": "/etc/ctmpl/start-slave.sh.ctmpl"
     },
     {
       "type": "file",
-      "source": "files/init/consul_template.conf",
+      "source": "packer/files/init/consul_template.conf",
       "destination": "/etc/init/consul_template.conf"
     }
   ],
