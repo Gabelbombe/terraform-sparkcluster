@@ -10,7 +10,7 @@
     "region":        "{{user `region`}}",
     "source_ami":    "{{user `source_ami`}}",
     "instance_type": "t2.micro",
-    "ssh_username":  "centos",
+    "ssh_username":  "ec2-user",
     "ami_name":      "{{user `atlas_username`}}-{{user `atlas_name`}}-{{timestamp}}"
   }],
   "provisioners": [
