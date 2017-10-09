@@ -25,6 +25,7 @@ variable "atlas_environment" {
   default = "spark-cluster"
 }
 
+## Override variables
 variable "region" {
   default = "us-east-1"
 }
