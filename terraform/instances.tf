@@ -87,7 +87,16 @@ resource "aws_instance" "spark-master" {
   subnet_id              = "${module.vpc.subnet_id}"
 
   tags {
-    Name = "${format("spark-master-%04d", count.index)}"
+    Name        = "${format("spark-master-%04d", count.index)}"
+    Application = ""
+    Environment = ""
+    Owner       = ""
+    Program     = ""
+    Purpose     = ""
+    Role        = ""
+    Stack       = ""
+    Team        = ""
+    Workload    = ""
   }
 }
 
@@ -106,7 +115,16 @@ resource "aws_instance" "spark-slave" {
   depends_on = ["aws_instance.spark-master"]
 
   tags {
-    Name = "${format("spark-slave-%04d", count.index)}"
+    Name        = "${format("spark-slave-%04d", count.index)}"
+    Application = ""
+    Environment = ""
+    Owner       = ""
+    Program     = ""
+    Purpose     = ""
+    Role        = ""
+    Stack       = ""
+    Team        = ""
+    Workload    = ""
   }
 }
 
