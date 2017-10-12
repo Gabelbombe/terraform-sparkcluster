@@ -8,7 +8,7 @@ PRIVATE_KEY_PATH="${KEY_PATH}/${KEY_NAME}.pem"
 PUBLIC_KEY_PATH="${KEY_PATH}/${KEY_NAME}.pub"
 
 [ ! -d "${KEY_PATH}" ] && {
-  echo -e "Directory [${KEY_PATH}] does not exist. This script must be run from the 'consul-cluster' directory." ; exit 1
+  echo -e "Directory [${KEY_PATH}] does not exist. This script must be run from the repositories root." ; exit 1
 }
 
 [ -z "${1}" ] && {

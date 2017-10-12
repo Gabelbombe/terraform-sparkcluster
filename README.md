@@ -39,3 +39,37 @@ packer push packer/spark-master.json
 ```
 packer push packer/spark-slave.json
 ```
+
+### Terraform
+
+Once the Packer builds have completed, you can proceed with the Terraform commands.
+
+#### Configure for Atlas
+
+```
+terraform remote config -backend="Atlas" -backend-config="name=$ATLAS_USERNAME/spark-cluster"
+```
+
+#### Get Terraform Modules
+
+```
+terraform get -update terraform/
+```
+
+#### Push To Atlas
+
+```
+terraform push -vcs=false -name="$ATLAS_USERNAME/spark-cluster" terraform/
+```
+
+#### Apply with Terraform Locally
+
+```
+terraform apply terraform/
+```
+
+#### Destroy with Terraform Locally
+
+```
+terraform destroy terraform/
+```
